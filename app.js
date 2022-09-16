@@ -4,40 +4,30 @@ const turn_dot = document.querySelector('.turn');
 const winner = document.querySelector('.winner');
 let turn = 'red';
 
+
     coins.forEach(coin => {
         coin.addEventListener('click', ()=>{
             if(coin.style.background != 'red' && coin.  style.background != 'yellow'){
-
                 coin.style.background = turn;
-
                 if(turn == 'red'){
                 turn = 'yellow'
                 }else{
                 turn = 'red'
-                }
+                };
+
             turn_dot.style.background = turn;
+            };
             
-            }
-            
-        })
+        });
         
     });
 
 // winning algorithim
-let clicked = 0;
-let game_over = false;
-
+// below is the reason I've been avoiding Tic TAC Toe my whole life..
+// if there's a shortcut to replace that long if-else statment please tell me  (:^_^:)
     coins.forEach(coin => {
         
         coin.addEventListener('click', ()=>{
-            // console.log(typeof coins, typeof coin, coins.indexOf(coin))
-            
-            if(coin.style.background != 'red' || coin.style.background != 'yellow'){
-                clicked+=1;
-            }
-
-            if(clicked >= coins.length){
-                game_over = true;
 
                 var one = coins[0].style.background;
                 var two = coins[1].style.background;
@@ -68,14 +58,11 @@ let game_over = false;
                     winner.style.background = three;
                 }
 
-
-            }
-
     });
 });
 
 // RESTART
 restart.addEventListener('click', ()=>{
     window.location.reload();
-})
+});
 
