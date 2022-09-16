@@ -24,6 +24,21 @@ body {
 
 .game-container h2 {
     margin: 20px 0 40px 0;
+    display: flex;
+}
+.game-container h2 span{
+    margin: 0px 20px ;
+}
+
+.game-container h2 div {
+    margin: 0px 20px;
+}
+.turn{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50%;
 }
 
 .game-grid {
