@@ -4,3 +4,20 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+    background: rgb(130, 230, 255);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    width: 60vw;
+    height: fit-content;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: flex-start;
+    align-items: center;
+}
