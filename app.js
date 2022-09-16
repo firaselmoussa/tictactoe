@@ -1,7 +1,7 @@
 const coins = Object.values(document.getElementsByClassName('coin'));
-
-
+const restart = document.getElementById('restart');
 const turn_dot = document.querySelector('.turn');
+const winner = document.querySelector('.winner');
 let turn = 'red';
 
     coins.forEach(coin => {
@@ -32,9 +32,8 @@ let game_over = false;
         coin.addEventListener('click', ()=>{
             // console.log(typeof coins, typeof coin, coins.indexOf(coin))
             
-            if(coin.style.background != 'red' || coin.  style.background != 'yellow'){
+            if(coin.style.background != 'red' || coin.style.background != 'yellow'){
                 clicked+=1;
-                console.log(clicked);
             }
 
             if(clicked >= coins.length){
@@ -52,21 +51,21 @@ let game_over = false;
 
 
                 if((one == two && two == three)){
-                    console.log(one);
+                    winner.style.background = one;
                 }else if(four == five && five == six){
-                    console.log(four);
+                    winner.style.background = four;
                 }else if(seven == eight && eight == nine){
-                    console.log(seven);
+                    winner.style.background = seven;
                 }else if(one == four && four == seven){
-                    console.log(one);
+                    winner.style.background = one;
                 }else if(two == five && five == eight){
-                    console.log(two);
+                    winner.style.background = two;
                 }else if(three == six && six == nine){
-                    console.log(three);
+                    winner.style.background = three;
                 }else if(one == five && five == nine){
-                    console.log(one);
+                    winner.style.background = one;
                 }else if(three == five && five == seven){
-                    console.log(three);
+                    winner.style.background = three;
                 }
 
 
@@ -74,4 +73,9 @@ let game_over = false;
 
     });
 });
+
+// RESTART
+restart.addEventListener('click', ()=>{
+    window.location.reload();
+})
 
