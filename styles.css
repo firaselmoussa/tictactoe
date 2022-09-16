@@ -60,7 +60,6 @@ body {
     background-size: cover;
 }
 
-
 .coin {
     margin: 10%;
     border-radius: 50%;
@@ -68,7 +67,6 @@ body {
     height: 90%;
     background: rgba(0, 0, 0, 0.1);
 }
-
 
 .coin:hover {
     transform: scale(1.01);
