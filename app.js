@@ -1,4 +1,5 @@
 const coins = Object.values(document.getElementsByClassName('coin'));
+const turn_dot = document.querySelector('.turn');
 let turn = 'red';
 
     coins.forEach(coin => {
@@ -11,7 +12,8 @@ let turn = 'red';
                 turn = 'yellow'
                 }else{
                 turn = 'red'
-            }
+                }
+            turn_dot.style.background = turn;
             
             }
             
