@@ -50,29 +50,23 @@ let game_over = false;
                 var eight = coins[7].style.background;
                 var nine = coins[8].style.background;
 
-                //  ||
-                //     four == five == six ||
-                //     seven == eight == nine ||
-                //     one == four == seven ||
-                //     two == five == six ||
-                //     three == eight == nine ||
-                //     one == five == nine ||
-                //     seven == five == three
 
-                if((one == two && two == three) ||
-                    (four == five && five == six)||
-                    (seven == eight && eight == nine) ||
-                    (one == four && four == seven) ||
-                    (two == five && five == eight) ||
-                    (three == six && six == nine)||
-                    (one == five && five == nine) ||
-                    (three == five && five == seven)){
-                
-                        console.log('win');
-                    
-                    
-                }else{
-                    console.log('lose');
+                if((one == two && two == three)){
+                    console.log(one);
+                }else if(four == five && five == six){
+                    console.log(four);
+                }else if(seven == eight && eight == nine){
+                    console.log(seven);
+                }else if(one == four && four == seven){
+                    console.log(one);
+                }else if(two == five && five == eight){
+                    console.log(two);
+                }else if(three == six && six == nine){
+                    console.log(three);
+                }else if(one == five && five == nine){
+                    console.log(one);
+                }else if(three == five && five == seven){
+                    console.log(three);
                 }
 
 
