@@ -11,12 +11,18 @@
         <div class="game-container">
         
 
-            <h1>TIC TAC TOE</h1>
+            <h1>TIC TAC TOE <button id="restart">Restart</button></h1>
             <h2>Winner:
                 <div class="winner"></div>
                 Turn: 
                 <div class="turn"></div>
-                <button id="restart">Restart</button>
+
+                Play Against
+                <select name="against" id="play_against">
+                    <option value="player">Player</option>
+                    <option value="AI">AI</option>
+                </select>
+                
             </h2>
 
             <div class="game-grid">

@@ -66,3 +66,4 @@ restart.addEventListener('click', ()=>{
     window.location.reload();
 });
 
+// Playing against computer
